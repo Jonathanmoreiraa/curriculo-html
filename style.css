@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 8px 16px;
+    background-color: #f1f1f0;
+    color: #2e2e2e;
+}
+
+.corpo{
+    margin: 0px 18%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto img{
+    width: 215px;
+    border-radius: 32px 8px;
+}
+
+.infos{
+    border: 1px solid #ccc;
+    padding: 0px 24px;
+    border-radius: 15px;
+}
+
+.infos h4{
+    text-align: center;
+}
+
+.infos p{
+    display: flex;
+    align-items: center;
+} 
+
+.infos p a{
+    text-decoration: none;
+    color: black;
+} 
+
+.infos p a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+} 
+
+.infos p img{
+    margin-right: 16px;
+}
+
+.secao{
+    margin: 44px;
+}
+
+.titulo-secao{
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    padding: 8px
+}
+
+.secao ul{
+    margin-bottom: 32px;
+}
+
+.secao ul li{
+    margin: 8px;
+}
+
+.empresa{
+    font-weight: bold;
+    padding-left: 8px;
+    margin-block-start: 1em;
+}
+
+.secao ul p{
+    margin: 8px 0px;
+}
+
+.formacao{
+    padding: 0px 24px;
+}
+
+@media only screen and (max-width: 1125px){
+    .corpo{
+        margin: 0px;
+        width: 100%;
+    }
+    .titulo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .secao{
+        margin: 16px;
+    }
+}
+
+@media print {
+    .corpo{
+        margin: 0px;
+        width: 100%;
+    }
+    .titulo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .secao{
+        margin: 16px;
+    }
+    .pagebreak { page-break-before: always; }
+
+}
